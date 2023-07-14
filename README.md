@@ -73,7 +73,7 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
    python3 -m venv env
    ```
 
-3. Activate the virtual environment using `source env/bin/activate` on macOS/Linux or
+2. Activate the virtual environment using `source env/bin/activate` on macOS/Linux or
 
   ```
   env\Scripts\activate
@@ -86,7 +86,7 @@ on Windows.
    pip install -r requirements.txt.
    ```
 
-5. Create a `.env file in the project root directory and add the following environment variables:
+4. Create a `.env file in the project root directory and add the following environment variables:
 
 - SECRET_KEY: a secret key for the Django project.
 
@@ -119,13 +119,13 @@ NEO4J_URL=bolt://localhost:7687
    python manage.py migrate
    ```
 
-7. Create a superuser account using `python
+6. Create a superuser account using `python
 
    ```
    python manage.py createsuperuser
    ```
 
-9. Run the development server using
+7. Run the development server using
 
    ```
    python manage.py runserver
