@@ -138,12 +138,12 @@ After completing this steps, you should be able to access the "Secure Me" Django
 
 In order for the project to be complete, extensive research was done from articles of related works and youtube tutorials.This include;
  
-* Related works.
+### Related works.
 
 [ArcGIS Enterprise SDK Developer Guide](https://developers.arcgis.com/enterprise-sdk/)<br /> 
 [ArcGIS Server - Extending services](https://enterprise.arcgis.com/en/server/latest/develop/windows/about-extending-services.htm)
 
-* Youtube tutorials.
+### Youtube tutorials.
   
 [Django setup in vs code](https://youtu.be/f1NQnhFFV-E)<br /> 
 [neo4j tutorial](https://youtu.be/_IgbB24scLI)
