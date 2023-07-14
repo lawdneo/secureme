@@ -92,7 +92,7 @@ on Windows.
 
 - `DEBUG`: set to `True` for development, `False` for production.
 
--`ALLOWED_HOSTS: a comma-separated list of allowed hostnames for the Django project.
+- `ALLOWED_HOSTS: a comma-separated list of allowed hostnames for the Django project.
 
 - `DATABASE_URL': a URL to connect to your database. For example, `
 
