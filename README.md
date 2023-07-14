@@ -26,12 +26,6 @@ For the above mentioned project to run seamlessly and effectively one should hav
 
 6. **Configuration**: In your Django project's settings, configure the connection details for Neo4j. This includes specifying the Neo4j database URL, username, password, and any other relevant parameters. Refer to the documentation of your chosen Neo4j driver library for specific configuration instructions.
 
-7. **Modeling**: Define Django models that correspond to the entities you want to store in Neo4j. These models will specify the structure and relationships of your data.
-
-8. **Data Ingestion**: Implement the logic to ingest crime data into your project. This could involve parsing existing datasets, integrating with APIs, or providing a user interface for manual data entry. Convert the data into the appropriate format and use the Neo4j driver library to save it to the Neo4j database.
-
-9. **Development Server**: Start the Django development server using the command `python manage.py runserver`. This will run the Django project locally, allowing you to access it through a web browser.
-
 * IDE
    * Visual Studio (with python setup) 
    
