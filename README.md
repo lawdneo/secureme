@@ -69,17 +69,24 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
 
 1. Navigate to the project directory and create a virtual environment using the command
 
-   ```python3 -m venv env```
+   ```
+   python3 -m venv env
+   ```
 
 3. Activate the virtual environment using `source env/bin/activate` on macOS/Linux or
 
-  ```env\Scripts\activate```  on Windows.
+  ```
+  env\Scripts\activate
+```
+on Windows.
 
 3. Install the project dependencies using
    
-   ```pip install -r requirements.txt.```
+   ```
+   pip install -r requirements.txt.
+   ```
 
-4. Create a `.env file in the project root directory and add the following environment variables:
+5. Create a `.env file in the project root directory and add the following environment variables:
 
 - SECRET_KEY: a secret key for the Django project.
 
@@ -91,28 +98,38 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
 
 - To set the Neo4j URL for the "Secure Me" Django project, add a new environment variable to the `.env` file with the following format:
 
-`NEO4J_URL=bolt://localhost:7687`
+```
+NEO4J_URL=bolt://localhost:7687
+```
 
 - Replace `localhost` with the hostname or IP address of your Neo4j server, and `7687` with the port number used by your Neo4j instance.
 
 - Then, in your Django project's settings file (`settings.py`), add the following line:
   
-  ```NEO4J_URL = os.environ.get('NEO4J_URL')```
+  ```
+  NEO4J_URL = os.environ.get('NEO4J_URL')
+  ```
 
 
 - This will read the `NEO4J_URL` environment variable and store it in the `NEO4J_URL` variable in your Django project's settings. You can then use this variable to connect to your Neo4j database.
 
 5. Run database migrations using
 
-   ```python manage.py migrate```
+   ```
+   python manage.py migrate
+   ```
 
-6. Create a superuser account using `python
+7. Create a superuser account using `python
 
-   ```manage.py createsuperuser```
+   ```
+   python manage.py createsuperuser
+   ```
 
-7. Run the development server using
+9. Run the development server using
 
-   ```python manage.py runserver```
+   ```
+   python manage.py runserver
+   ```
 
 After completing this steps, you should be able to access the "Secure Me" Django project by opening your web browser and navigating to http://localhost:8000/
  
