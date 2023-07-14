@@ -4,8 +4,6 @@
 
 This project is django based and utilizes neo4js gragh database capability to establish seamless co relations between crime data across a specified geographical location.
 
-
-### Abstract
 The aim of this project is to examine data regarding the spatial distribution of crimes committed within a specified geographical location- in this case the country kenya.Here data is collected from all spawning registered crimes from each police station and sent to one unified database.
 
 Therefore, we intend to apply algorithms and methods of analysis; geospatial , temporal and network analysis to compile and visualize the relations in the antecedent of the crime, the present and help show via patterns the types of crime that are more likely to manifest.
@@ -37,7 +35,7 @@ For the above mentioned project to run seamlessly and effectively one should hav
 * IDE
    * Visual Studio (with python setup) 
    
-### Tools used
+## Tools used
 
  * [Neo4js](https://neo4j.com/)
  * [Neo4jBloom](https://neo4j.com/product/bloom/)
@@ -45,7 +43,7 @@ For the above mentioned project to run seamlessly and effectively one should hav
  * [FastApi](https://fastapi.tiangolo.com/)
  
 
-#### Platform buildup:
+## Platform buildup:
 
 This platform has:
 
@@ -68,12 +66,12 @@ The two sides contain the following:
 * Criminal data entry module
 
 
-### How the project works
+## How the project works
 
 The crime mapping Django project incorporates Neo4j as the graph database and Django as the framework. It enables users to explore and analyze crime data through interactive maps. Crime data is ingested, converted, and stored in Neo4j using Django models. The project offers robust search capabilities and statistical analysis using Django's querying and Neo4j's Cypher query language. User authentication and authorization ensure secure access control. Overall, the project provides an efficient solution for visualizing, analyzing, and managing crime data.
 
 
-### Setup
+## Setup
 
 1. Navigate to the project directory and create a virtual environment using the command
 
@@ -95,7 +93,7 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
 
 -`ALLOWED_HOSTS: a comma-separated list of allowed hostnames for the Django project.
 
-- `DATABASE_URL': a URL to connect to your database. For example, `sqlite:///db.sqlite3` for SQLite or postgres://user:password@localhost /dbname' for PostgreSQL
+- `DATABASE_URL': a URL to connect to your database. For example, `
 
 - To set the Neo4j URL for the "Secure Me" Django project, add a new environment variable to the `.env` file with the following format:
 
@@ -125,24 +123,24 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
 After completing this steps, you should be able to access the "Secure Me" Django project by opening your web browser and navigating to http://localhost:8000/
  
 
-### Relevant Sources.
+## Relevant Sources.
 
 In order for the project to be complete, extensive research was done from articles of related works and youtube tutorials.This include;
  
 * Related works.
 
-[ArcGIS Enterprise SDK Developer Guide](https://developers.arcgis.com/enterprise-sdk/)
+[ArcGIS Enterprise SDK Developer Guide](https://developers.arcgis.com/enterprise-sdk/)<br /> 
 [ArcGIS Server - Extending services](https://enterprise.arcgis.com/en/server/latest/develop/windows/about-extending-services.htm)
 
 * Youtube tutorials.
   
-[Django setup in vs code](https://youtu.be/f1NQnhFFV-E)
+[Django setup in vs code](https://youtu.be/f1NQnhFFV-E)<br /> 
 [neo4j tutorial](https://youtu.be/_IgbB24scLI)
 
-### Resources.
+## Resources.
 
-[Docker](https://www.docker.com/)
-[Django](https://www.djangoproject.com/)
+[Docker](https://www.docker.com/)<br /> 
+[Django](https://www.djangoproject.com/)<br /> 
 [Neo4js](https://neo4j.com/)
 
 
