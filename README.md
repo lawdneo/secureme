@@ -1,12 +1,10 @@
-# Criminal mapping platform: <br /> Secure Me
+# Criminal mapping platform:Secure Me
 
 ## A web based platform aimed at easening the process of analysis and relationship detection in the current criminal system.
 
 This project is django based and utilizes neo4js gragh database capability to establish seamless co relations between crime data across a specified geographical location.
 
-The aim of this project is to examine data regarding the spatial distribution of crimes committed within a specified geographical location- in this case the country kenya.Here data is collected from all spawning registered crimes from each police station and sent to one unified database.
-
-Therefore, we intend to apply algorithms and methods of analysis; geospatial , temporal and network analysis to compile and visualize the relations in the antecedent of the crime, the present and help show via patterns the types of crime that are more likely to manifest.
+The aim of this project is to examine data regarding the spatial distribution of crimes committed within a specified geographical location- in this case the country kenya.Here data is collected from all spawning registered crimes from each police station and sent to one unified database where then data can be visualized and the relations in the antecedent of the crime, the present and help show via patterns the types of crime that are more likely to manifest.
 
 
 ## Functional Requirements
@@ -69,21 +67,28 @@ The crime mapping Django project incorporates Neo4j as the graph database and Dj
 
 1. Navigate to the project directory and create a virtual environment using the command
 
-   ```
-   python3 -m venv env
+   ```bash
+   
+   python3 -m venv env.
+   
    ```
 
-2. Activate the virtual environment using `source env/bin/activate` on macOS/Linux or
+2. Activate the virtual environment using `source env/bin/activate` on macOS/Linux or on Windows.
 
-  ```
+  
+``` 
   env\Scripts\activate
-```
-on Windows.
+  
+```  
+
 
 3. Install the project dependencies using
    
-   ```
+   
+    ```bash
+
    pip install -r requirements.txt.
+
    ```
 
 4. Create a `.env file in the project root directory and add the following environment variables:
@@ -98,16 +103,21 @@ on Windows.
 
 - To set the Neo4j URL for the "Secure Me" Django project, add a new environment variable to the `.env` file with the following format:
 
-```
-NEO4J_URL=bolt://localhost:7687
-```
+    ```bash
+  
+   NEO4J_URL=bolt://localhost:7687
+
+    ```
 
 - Replace `localhost` with the hostname or IP address of your Neo4j server, and `7687` with the port number used by your Neo4j instance.
 
 - Then, in your Django project's settings file (`settings.py`), add the following line:
   
-  ```
+
+    ```bash
+
   NEO4J_URL = os.environ.get('NEO4J_URL')
+  
   ```
 
 
@@ -115,20 +125,28 @@ NEO4J_URL=bolt://localhost:7687
 
 5. Run database migrations using
 
-   ```
+   
+    ```bash
+    
    python manage.py migrate
+    
    ```
 
 6. Create a superuser account using `python
 
-   ```
+    ```bash
+    
    python manage.py createsuperuser
+    
    ```
 
 7. Run the development server using
 
-   ```
+  
+    ```bash
+    
    python manage.py runserver
+    
    ```
 
 After completing this steps, you should be able to access the "Secure Me" Django project by opening your web browser and navigating to http://localhost:8000/
